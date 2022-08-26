@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.dragging {
+  position: relative;
+}
+.dragging:after {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background: cornflowerblue;
+  position: absolute;
+  z-index: -1;
+}
+.dragover {
+  position: relative;
+}
+.dragover:before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  background: #ccc;
+  position: absolute;
+  z-index: 1;
+}
+th {
+  cursor: grab;
+}
+th,
+td {
+  border: 1px solid #000000;
+  resize: horizontal;
+  overflow: scroll;
+}
+
+td.active,
+th.active {
+  background: cornflowerblue;
+}
+button {
+}
+
+td::-webkit-resizer {
+  background-color: transparent;
+}
+
+/* th::-webkit-scrollbar,
+td::-webkit-scrollbar {
+  background-color: transparent;
+} */
