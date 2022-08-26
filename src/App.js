@@ -91,14 +91,6 @@ export default function App() {
   const formatData = (user, column) => {
     return user[column.name];
   };
-
-  const MouseUpHandle = (event) => {
-    // console.log(event)
-  };
-
-  const MouseDownHandle = (event) => {
-    // console.log(event)
-  };
   return (
     <Box>
       <MuiTable>
