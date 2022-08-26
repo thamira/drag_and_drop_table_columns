@@ -85,7 +85,7 @@ export default function App() {
 
   useEffect(() => {
     //save_new_table_order_in_user
-    // console.log("new column order", columnsOrder);
+    console.log("new column order", columnsOrder);
   }, [columnsOrder]);
 
   const formatData = (user, column) => {
